@@ -274,6 +274,23 @@ img {
 .key-people-social-list {
     background-color: #2E2F42;
 }
+
+.key-social-icons-ul {
+    background-color: var(--iris);
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+}
+
+.key-social-icons-list {
+    background-color: #2E2F42;
+}
+
+.key-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* studio and portfolio html */
 .end {
     background: var(--navyblue);
