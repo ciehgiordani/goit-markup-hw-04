@@ -51,6 +51,9 @@ body {
     padding-bottom: 24px;
 }
 
+.nav-menu-link {
+    color: var(--navyblue);
+}
 .nav-menu .item:not(:last-child), .contacts .item:not(:last-child){
     margin-right: 50px;
 }
@@ -65,6 +68,10 @@ body {
 /* class for resetting basic properties in the positions */
 .link {
     text-decoration: none;
+}
+
+svg {
+    white-space: 0;
 }
 
 .logo {
@@ -99,13 +106,20 @@ body {
     color: var(--slate);
 }
 
-.link:hover {
-    color: var(--ocean);
+.studio-link {
+    color:var(--ocean)
 }
 
-.nav-menu-link:active {
+.portfolio-link {
     color: var(--ocean);
 }
+.link:hover, .link:active {
+    color: var(--ocean);
+}
+.link:focus {
+    color:var(--ocean);
+}
+
 h1,
 h2,
 h3,
@@ -118,27 +132,15 @@ p {
 }
 
 .hero {
-    background-color: var(--grey, rgba(46, 47, 66, .70));
-    display: flex;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobackground.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1440px;  
     text-align: center;
-    justify-content: center;
     padding-top: 188px;
     padding-bottom: 188px;
-}
-
-.hero::before{
-    content:'';
-    position: absolute;
-    top: 72px;
-    height: 598px;
-    width:100%;
-    background-color: var(--grey, rgba(46, 47, 66, .70));
-    background-image: url(../images/herobackground.png);
-    opacity: .7;
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
+    background-size: cover;
 }
 
 .hero-title {
@@ -218,6 +220,12 @@ p {
 
 .feature-list-par{
     color: var(--slate);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.32px;
 }
 
 .section-title {
@@ -280,32 +288,33 @@ img {
 .key-social-icons-ul {
     margin-top: 8px;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
+    column-gap: 24px;
 }
 
-.key-social-icons-list  {
-    background-color: var(--iris);
+.key-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--iris);
     width: 40px;
     height: 40px;
     border-radius: 20px;
+
 }
 
+.key-social-link:hover {
+    background-color: var(--ocean);
 
-.key-social-icons-list:hover {
+}
+
+.key-social-link:focus {
     background-color: var(--ocean);
 }
 
-.key-social-icons-list:focus {
-    background-color: var(--ocean);
+.key-social-link:active {
+    background-color: var(--ocean); */
 }
 
-.key-social-icons-list:active {
-    background-color: var(--ocean);
-}
 
 
 .customers {
@@ -315,11 +324,11 @@ img {
     margin-left: 0;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     column-gap: 24px;
 }
 
-.customer-icons-list {
+/* .customer-icons-list {
     flex-basis: calc((100% - 75px) / 3);
     border-radius: 4px;
     border: 1px solid var(--lightslate);
@@ -328,34 +337,35 @@ img {
     justify-content: center;
     width: 168px;
     height: 88px;
+} */
+
+.customer-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border-radius: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate);
+    fill:var(--lightslate);
 }
 
-.customer-icons-list:hover {
+.customer-icons-link:hover {
     border: 1px solid var(--ocean);
     fill: var(--ocean);
 }
 
-.customer-icons-list:focus {
+.customer-icons-link:focus {
     border: 1px solid var(--ocean);
     fill: var(--ocean);
 }
 
-.customer-icons-list:active {
+.customer-icons-link:active {
     border: 1px solid var(--ocean);
     fill: var(--ocean);
 }
 
-.cus-svg {
-    fill: var(--lightslate);
-}
-
-.cus-svg:hover {
-    fill:var(--ocean);
-}
-
-.cus-svg:active {
-    fill: var(--ocean);
-}
 .cus-no-pad {
     padding-bottom: 0;
 }
@@ -412,33 +422,34 @@ footer {
     margin-bottom: 18px;
 }
 .end-icons-ul {
+    margin-top: 8px;
     display: flex;
-    align-items: center;
-    column-gap: 16px;
-
+    column-gap: 24px;
 }
 
-.end-icons-list {
-    background-color: var(--iris);
+.end-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--iris);
     width: 40px;
     height: 40px;
     border-radius: 20px;
+
 }
 
-.end-icons-list:hover {
+.end-social-link:hover {
     background-color: var(--green);
-    
+
 }
 
-.end-icons-list:focus {
+.end-social-link:focus {
     background-color: var(--green);
 }
 
-.end-icons-list:focus {
+.end-social-link:active {
     background-color: var(--green);
+    */
 }
 
 /* portfolio html */

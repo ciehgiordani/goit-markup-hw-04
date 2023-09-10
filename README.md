@@ -1,4 +1,4 @@
-# goit-markup-hw-03
+# goit-markup-hw-04
 
     Instructions
 
@@ -7,8 +7,8 @@
 - Create a repository **goit-markup-hw-04**.
 - Clone the created repository and copy the previous work files into it.
 - Add styles for geometry (width, margins, paddings and borders) and content positioning with Flexbox for page layout of [homework #4](<https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?node-id=297015%3A303&t=za4WhRegytd8hndX-0>).
-- To generate an SVG sprite, use [Icomoon](<https://icomoon.io/>).
--To optimize the generated SVG sprite, use [svgomg](<https://jakearchibald.github.io/svgomg/>).
+- To generate an SVG sprite, use [Icomoon](https://icomoon.io/).
+  -To optimize the generated SVG sprite, use [svgomg](https://jakearchibald.github.io/svgomg/).
 - Set up **GitHub Pages** and add a link to the live page in the header of the GitHub repository.
 
 ## **Criteria for work acceptance by the tutor**
